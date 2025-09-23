@@ -1,4 +1,4 @@
-export default function VideoCard({ videoSrc = "https://www.youtube.com/embed/dQw4w9WgXcQ", title = "Video Title Placeholder", description = "Replace this description with details about the video and how it relates to Afghanistan." }) {
+export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embed/dQw4w9WgXcQ", title = "Video Title Placeholder", description = "Replace this description with details about the video and how it relates to Afghanistan." }) {
   const toEmbedUrl = (url) => {
     try {
       const u = new URL(url);
@@ -34,7 +34,7 @@ export default function VideoCard({ videoSrc = "https://www.youtube.com/embed/dQ
   const embedUrl = toEmbedUrl(videoSrc);
 
   return (
-    <div className="video-card">
+    <div className="video-card" id={id}>
       <div className="video-wrapper">
         <iframe
           className="video-embed"

@@ -19,7 +19,20 @@ export default function NavBar() {
         <nav className="links">
           <a href="#hero">Home</a>
           <a href="#overview">Overview</a>
-          <a href="#video">Video</a>
+          <div className="dropdown">
+            <button className="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Video ▾</button>
+            <div className="dropdown-menu" role="menu">
+              <a href="#video-asian-country" role="menuitem">Asian Country</a>
+              <a href="#video-health-wellness" role="menuitem">Health and Wellness</a>
+              <a href="#video-personality" role="menuitem">Personality</a>
+              <a href="#video-cultural-festivals" role="menuitem">Cultural Festivals</a>
+              <a href="#video-local-entertainment" role="menuitem">Local Entertainment</a>
+              <a href="#video-languages-dialects" role="menuitem">Languages and Dialects</a>
+              <a href="#video-traditional-sports" role="menuitem">Traditional Sports</a>
+              <a href="#video-communication" role="menuitem">Communication</a>
+              <a href="#video-environment" role="menuitem">Environment</a>
+            </div>
+          </div>
           <a href="#contact">Contact</a>
         </nav>
       </div>
