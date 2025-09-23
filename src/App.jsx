@@ -26,6 +26,14 @@ function App() {
             society, and present-day developments to help the world better
             understand this fascinating nation.
           </p>
+          <div className="map-wrapper">
+            <iframe
+              title="Afghanistan Map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Afghanistan&hl=en&z=5&output=embed"
+            ></iframe>
+          </div>
         </Section>
 
         <Section id="video" title="Featured Video">
