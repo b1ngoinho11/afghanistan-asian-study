@@ -144,6 +144,10 @@
   padding: 3rem 1rem;
   background: var(--bg);
 }
+.section,
+.video-card {
+  scroll-margin-top: 80px; /* offset for fixed navbar */
+}
 .section:nth-of-type(odd) {
   background: var(--bg-contrast);
 }
