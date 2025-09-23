@@ -122,9 +122,19 @@
   font-size: 3rem;
   text-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
+.hero-flag-wrap {
+  margin: 0.25rem 0 0.75rem;
+}
+.hero-flag {
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
 .hero p {
   margin: 0 0 1.25rem;
   opacity: 0.9;
+  font-family: var(--heading);
+  letter-spacing: 0.2px;
 }
 .hero h3 {
   margin: 0 0 0.75rem;
@@ -138,6 +148,9 @@
   color: var(--accent-contrast);
   box-shadow: 0 8px 18px rgba(166,106,44,0.25);
   transition: transform 0.15s ease, box-shadow 0.2s ease;
+  font-family: var(--heading);
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .section {
@@ -160,6 +173,8 @@
 }
 .section p {
   margin: 0;
+  font-family: var(--heading);
+  letter-spacing: 0.2px;
 }
 
 .map-wrapper {
@@ -240,4 +255,7 @@
   text-align: center;
   opacity: 0.9;
   background: var(--bg-contrast);
+  font-family: var(--heading);
+  letter-spacing: 0.2px;
 }
+.footer p { font-family: var(--heading); }

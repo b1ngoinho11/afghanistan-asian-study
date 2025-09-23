@@ -112,8 +112,8 @@ function App() {
           />
         </Section>
 
-        <Section id="contact" title="Contact">
-          <p> Add your contact or footer information here. </p>
+        <Section id="created-by" title="Created by">
+          <p> 65011269 Budthbundit Thaya-urai </p>
         </Section>
       </main>
 

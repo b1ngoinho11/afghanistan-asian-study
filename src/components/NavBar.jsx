@@ -33,7 +33,7 @@ export default function NavBar() {
               <a href="#video-environment" role="menuitem">Environment</a>
             </div>
           </div>
-          <a href="#contact">Contact</a>
+          <a href="#created-by">Created By</a>
         </nav>
       </div>
     </header>
