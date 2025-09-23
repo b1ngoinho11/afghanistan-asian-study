@@ -29,7 +29,66 @@ function App() {
         </Section>
 
         <Section id="video" title="Featured Video">
-          <VideoCard />
+          <VideoCard
+            videoSrc="https://youtu.be/GKXfVJX02Uk"
+            title="Asian Country"
+            description="A quick look at Afghanistan as part of Asia, highlighting its location, neighbors, and regional importance."
+          />
+          <VideoCard
+            videoSrc="https://youtu.be/mO1Gp2sqRUY"
+            title="Health and Wellness"
+            description="Covers traditional health practices, modern healthcare challenges, and how people maintain well-being in daily life."
+          />
+          {/* <VideoCard
+            videoSrc="https://youtu.be/apnU4tEqLiM"
+            title="Political Leadership"
+            description="Explains Afghanistan’s leadership system, key figures, and the role politics play in shaping the nation."
+          /> */}
+          <VideoCard
+            videoSrc="https://youtu.be/uNtdkMnyUBY"
+            title="Personality"
+            description="Showcases the warm, hospitable, and resilient character of Afghan people across generations."
+          />
+          <VideoCard
+            videoSrc="https://youtu.be/ap8Ugo9iRdE"
+            title="Cultural Festivals"
+            description="Explores colorful celebrations like Nowruz and Eid, reflecting traditions, music, and community spirit."
+          />
+          <VideoCard
+            videoSrc="https://youtu.be/8amZ6cFGfq4"
+            title="Local Entertainment"
+            description="Highlights Afghan music, poetry, storytelling, and the role of tea houses as social hubs."
+          />
+          <VideoCard
+            videoSrc="https://youtu.be/apnU4tEqLiM"
+            title="Languages and Dialects"
+            description="Introduces Dari and Pashto as main languages, along with regional dialects that show the country’s diversity."
+          />
+          <VideoCard
+            videoSrc="https://youtu.be/dB_pUhCha-4"
+            title="Traditional Sports"
+            description="Focuses on Buzkashi and other native games that represent strength, teamwork, and culture."
+          />
+          {/* <VideoCard
+            videoSrc="https://youtu.be/mO1Gp2sqRUY"
+            title="Asian Beauty"
+            description="Presents Afghanistan’s unique sense of beauty seen in clothing, jewelry, and natural landscapes."
+          /> */}
+          {/* <VideoCard
+            videoSrc="https://youtu.be/ap8Ugo9iRdE"
+            title="Population"
+            description="Provides insight into demographics, ethnic groups, and the youthful population shaping the country’s future."
+          /> */}
+          <VideoCard
+            videoSrc="https://youtu.be/a4P5S7oxgiQ"
+            title="Communication"
+            description="Looks at how Afghans connect—through face-to-face traditions, media, and expanding digital networks."
+          />
+          <VideoCard
+            videoSrc="https://youtu.be/nSejE2UAx20"
+            title="Environment"
+            description="Discusses Afghanistan’s mountains, rivers, and environmental challenges such as deforestation and climate change."
+          />
         </Section>
 
         <Section id="contact" title="Contact">

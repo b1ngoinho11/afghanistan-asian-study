@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +11,8 @@
   --accent: #a66a2c;
   --accent-contrast: #ffffff;
   --border: rgba(42, 42, 42, 0.12);
+  --heading: "Playfair Display", Georgia, serif;
+  --radius: 14px;
 
   color-scheme: light;
   color: var(--text);
@@ -47,6 +49,11 @@ html {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading);
+  letter-spacing: 0.2px;
 }
 
 button {

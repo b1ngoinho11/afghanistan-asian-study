@@ -19,5 +19,3 @@ export default function VideoCard({ videoSrc = "https://www.youtube.com/embed/dQ
     </div>
   )
 }
-
-
