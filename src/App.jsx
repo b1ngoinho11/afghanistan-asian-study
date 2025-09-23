@@ -40,6 +40,7 @@ function App() {
             videoSrc="https://youtu.be/mO1Gp2sqRUY"
             title="Health and Wellness"
             description="Covers traditional health practices, modern healthcare challenges, and how people maintain well-being in daily life."
+            reverse
           />
           {/* <VideoCard
             videoSrc="https://youtu.be/apnU4tEqLiM"
@@ -57,6 +58,7 @@ function App() {
             videoSrc="https://youtu.be/ap8Ugo9iRdE"
             title="Cultural Festivals"
             description="Explores colorful celebrations like Nowruz and Eid, reflecting traditions, music, and community spirit."
+            reverse
           />
           <VideoCard
             id="video-local-entertainment"
@@ -69,6 +71,7 @@ function App() {
             videoSrc="https://youtu.be/apnU4tEqLiM"
             title="Languages and Dialects"
             description="Introduces Dari and Pashto as main languages, along with regional dialects that show the country’s diversity."
+            reverse
           />
           <VideoCard
             id="video-traditional-sports"
@@ -91,6 +94,7 @@ function App() {
             videoSrc="https://youtu.be/a4P5S7oxgiQ"
             title="Communication"
             description="Looks at how Afghans connect—through face-to-face traditions, media, and expanding digital networks."
+            reverse
           />
           <VideoCard
             id="video-environment"

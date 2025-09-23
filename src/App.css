@@ -168,6 +168,12 @@
   grid-template-columns: 1fr;
   gap: 1rem;
 }
+.video-card--reverse {
+  direction: rtl;
+}
+.video-card--reverse > * {
+  direction: ltr;
+}
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -191,6 +197,15 @@
   padding: 1rem;
   background: var(--bg-contrast);
 }
+.video-description--warm {
+  background: rgba(255, 232, 204, 0.6);
+  border-color: rgba(166,106,44,0.35);
+}
+.video-description--cool {
+  background: rgba(210, 230, 255, 0.6);
+  border-color: rgba(60, 120, 200, 0.25);
+}
+
 
 @media (min-width: 900px) {
   .video-card {

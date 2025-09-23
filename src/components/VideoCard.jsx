@@ -1,4 +1,4 @@
-export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embed/dQw4w9WgXcQ", title = "Video Title Placeholder", description = "Replace this description with details about the video and how it relates to Afghanistan." }) {
+export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embed/dQw4w9WgXcQ", title = "Video Title Placeholder", description = "Replace this description with details about the video and how it relates to Afghanistan.", reverse = false, tone = "neutral" }) {
   const toEmbedUrl = (url) => {
     try {
       const u = new URL(url);
@@ -34,7 +34,7 @@ export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embe
   const embedUrl = toEmbedUrl(videoSrc);
 
   return (
-    <div className="video-card" id={id}>
+    <div className={`video-card ${reverse ? 'video-card--reverse' : ''}`} id={id}>
       <div className="video-wrapper">
         <iframe
           className="video-embed"
@@ -47,7 +47,7 @@ export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embe
           loading="lazy"
         ></iframe>
       </div>
-      <div className="video-description">
+      <div className={`video-description video-description--${tone}`}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
