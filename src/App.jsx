@@ -50,42 +50,43 @@ function App() {
             description="Covers traditional health practices, modern healthcare challenges, and how people maintain well-being in daily life."
             reverse
           />
-          {/* <VideoCard
-            videoSrc="https://youtu.be/apnU4tEqLiM"
+          <VideoCard
+            videoSrc="https://youtu.be/J5v09woqLQs"
             title="Political Leadership"
             description="Explains Afghanistan’s leadership system, key figures, and the role politics play in shaping the nation."
-          /> */}
+          />
           <VideoCard
             id="video-personality"
             videoSrc="https://youtu.be/uNtdkMnyUBY"
             title="Personality"
             description="Showcases the warm, hospitable, and resilient character of Afghan people across generations."
+            reverse
           />
           <VideoCard
             id="video-cultural-festivals"
             videoSrc="https://youtu.be/ap8Ugo9iRdE"
             title="Cultural Festivals"
             description="Explores colorful celebrations like Nowruz and Eid, reflecting traditions, music, and community spirit."
-            reverse
           />
           <VideoCard
             id="video-local-entertainment"
             videoSrc="https://youtu.be/8amZ6cFGfq4"
             title="Local Entertainment"
             description="Highlights Afghan music, poetry, storytelling, and the role of tea houses as social hubs."
+            reverse
           />
           <VideoCard
             id="video-languages-dialects"
             videoSrc="https://youtu.be/apnU4tEqLiM"
             title="Languages and Dialects"
             description="Introduces Dari and Pashto as main languages, along with regional dialects that show the country’s diversity."
-            reverse
           />
           <VideoCard
             id="video-traditional-sports"
             videoSrc="https://youtu.be/dB_pUhCha-4"
             title="Traditional Sports"
             description="Focuses on Buzkashi and other native games that represent strength, teamwork, and culture."
+            reverse
           />
           {/* <VideoCard
             videoSrc="https://youtu.be/mO1Gp2sqRUY"
@@ -96,19 +97,20 @@ function App() {
             videoSrc="https://youtu.be/ap8Ugo9iRdE"
             title="Population"
             description="Provides insight into demographics, ethnic groups, and the youthful population shaping the country’s future."
+            reverse
           /> */}
           <VideoCard
             id="video-communication"
             videoSrc="https://youtu.be/a4P5S7oxgiQ"
             title="Communication"
             description="Looks at how Afghans connect—through face-to-face traditions, media, and expanding digital networks."
-            reverse
           />
           <VideoCard
             id="video-environment"
             videoSrc="https://youtu.be/nSejE2UAx20"
             title="Environment"
             description="Discusses Afghanistan’s mountains, rivers, and environmental challenges such as deforestation and climate change."
+            reverse
           />
         </Section>
 
