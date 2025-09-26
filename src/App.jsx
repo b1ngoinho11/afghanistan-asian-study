@@ -98,7 +98,7 @@ function App() {
           />
           <VideoCard
             id="video-health-wellness"
-            videoSrc="https://youtu.be/6HywFR2k6kA?si=x7mbA4HF2j-0T3jZ"
+            videoSrc="https://youtu.be/4y99h85eq7U"
             title="Health and Wellness"
             description="Covers traditional health practices, modern healthcare challenges, and how people maintain well-being in daily life."
             reverse
@@ -143,7 +143,7 @@ function App() {
           />
           <VideoCard
             id="video-asian-beauty"
-            videoSrc="https://youtu.be/6HywFR2k6kA?si=x7mbA4HF2j-0T3jZ"
+            videoSrc="https://youtu.be/jpwL3fD-lmU"
             title="Asian Beauty"
             description="Presents Afghanistan’s unique sense of beauty seen in clothing, jewelry, and natural landscapes."
           />
