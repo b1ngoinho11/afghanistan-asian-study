@@ -210,6 +210,31 @@
   letter-spacing: 0.2px;
 }
 
+.facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--bg-contrast);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.facts-table th,
+.facts-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.facts-table th {
+  width: 32%;
+  color: var(--accent);
+  background: rgba(166,106,44,0.06);
+}
+.facts-table tr + tr td,
+.facts-table tr + tr th {
+  border-top: 1px solid var(--border);
+}
+
 .map-wrapper {
   position: relative;
   width: 100%;
@@ -230,6 +255,21 @@
   border: 0;
 }
 
+/* New: Overview two-column layout and smaller map variant */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.overview-map-col {
+  display: grid;
+  align-content: center;
+  gap: 0.75rem;
+}
+.map-wrapper--small {
+  padding-top: 52%;
+}
 .video-card {
   margin-top: 1rem;
   display: grid;
@@ -283,6 +323,13 @@
   }
   .hero-text { text-align: left; }
   .hero-aside { text-align: center; }
+  /* New: two-column layout for overview at large screens */
+  .overview-grid {
+    grid-template-columns: 1.8fr 1fr;
+    gap: 2rem;
+  }
+  .overview-map-col { align-content: center; }
+  .map-wrapper--small { padding-top: 65%; }
   .video-card {
     grid-template-columns: 2fr 1fr;
     align-items: start;

@@ -26,13 +26,66 @@ function App() {
             society, and present-day developments to help the world better
             understand this fascinating nation.
           </p>
-          <div className="map-wrapper">
-            <iframe
-              title="Afghanistan Map"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Afghanistan&hl=en&z=5&output=embed"
-            ></iframe>
+          <br></br>
+          <br></br>
+          <div className="overview-grid">
+            <div>
+              <table className="facts-table">
+                <tbody>
+                  <tr>
+                    <th>Capital</th>
+                    <td>Kabul</td>
+                  </tr>
+                  <tr>
+                    <th>Population</th>
+                    <td>~41 million</td>
+                  </tr>
+                  <tr>
+                    <th>Languages</th>
+                    <td>Dari, Pashto, Uzbek, Turkmen</td>
+                  </tr>
+                  <tr>
+                    <th>Neighbors</th>
+                    <td>Pakistan, Iran, Turkmenistan, Uzbekistan, Tajikistan, China</td>
+                  </tr>
+                  <tr>
+                    <th>Currency</th>
+                    <td>Afghan afghani (AFN)</td>
+                  </tr>
+                  <tr>
+                    <th>Time Zone</th>
+                    <td>UTC+4:30</td>
+                  </tr>
+                  <tr>
+                    <th>Provinces</th>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <th>Landscape</th>
+                    <td>Hindu Kush, Amu Darya, Helmand</td>
+                  </tr>
+                  <tr>
+                    <th>Economy</th>
+                    <td>Agriculture, trade, mining potential</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="overview-map-col">
+              <div className="map-wrapper map-wrapper--small">
+                <iframe
+                  title="Afghanistan Map"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=Afghanistan&hl=en&z=5&output=embed"
+                ></iframe>
+              </div>
+              <p>
+                Afghanistan’s location has long made it a cultural crossroads,
+                connecting South, Central, and West Asia and shaping its diverse
+                heritage and traditions.
+              </p>
+            </div>
           </div>
         </Section>
 
