@@ -29,6 +29,8 @@ export default function NavBar() {
               <a href="#video-local-entertainment" role="menuitem">Local Entertainment</a>
               <a href="#video-languages-dialects" role="menuitem">Languages and Dialects</a>
               <a href="#video-traditional-sports" role="menuitem">Traditional Sports</a>
+              <a href="#video-asian-beauty" role="menuitem">Asian Beauty</a>
+              <a href="#video-population" role="menuitem">Population</a>
               <a href="#video-communication" role="menuitem">Communication</a>
               <a href="#video-environment" role="menuitem">Environment</a>
             </div>

@@ -98,7 +98,7 @@ function App() {
           />
           <VideoCard
             id="video-health-wellness"
-            videoSrc="https://youtu.be/mO1Gp2sqRUY"
+            videoSrc="https://youtu.be/6HywFR2k6kA?si=x7mbA4HF2j-0T3jZ"
             title="Health and Wellness"
             description="Covers traditional health practices, modern healthcare challenges, and how people maintain well-being in daily life."
             reverse
@@ -141,17 +141,19 @@ function App() {
             description="Focuses on Buzkashi and other native games that represent strength, teamwork, and culture."
             reverse
           />
-          {/* <VideoCard
-            videoSrc="https://youtu.be/mO1Gp2sqRUY"
+          <VideoCard
+            id="video-asian-beauty"
+            videoSrc="https://youtu.be/6HywFR2k6kA?si=x7mbA4HF2j-0T3jZ"
             title="Asian Beauty"
             description="Presents Afghanistan’s unique sense of beauty seen in clothing, jewelry, and natural landscapes."
-          /> */}
-          {/* <VideoCard
-            videoSrc="https://youtu.be/ap8Ugo9iRdE"
+          />
+          <VideoCard
+            id="video-population"
+            videoSrc="https://youtu.be/mO1Gp2sqRUY"
             title="Population"
             description="Provides insight into demographics, ethnic groups, and the youthful population shaping the country’s future."
             reverse
-          /> */}
+          />
           <VideoCard
             id="video-communication"
             videoSrc="https://youtu.be/a4P5S7oxgiQ"
