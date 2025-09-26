@@ -104,6 +104,7 @@ function App() {
             reverse
           />
           <VideoCard
+            id="video-political-leadership"
             videoSrc="https://youtu.be/J5v09woqLQs"
             title="Political Leadership"
             description="Explains Afghanistan’s leadership system, key figures, and the role politics play in shaping the nation."

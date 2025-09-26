@@ -24,6 +24,7 @@ export default function NavBar() {
             <div className="dropdown-menu" role="menu">
               <a href="#video-asian-country" role="menuitem">Asian Country</a>
               <a href="#video-health-wellness" role="menuitem">Health and Wellness</a>
+              <a href="#video-political-leadership" role="menuitem">Political Leadership</a>
               <a href="#video-personality" role="menuitem">Personality</a>
               <a href="#video-cultural-festivals" role="menuitem">Cultural Festivals</a>
               <a href="#video-local-entertainment" role="menuitem">Local Entertainment</a>
