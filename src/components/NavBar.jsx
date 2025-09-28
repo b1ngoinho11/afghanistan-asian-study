@@ -19,6 +19,7 @@ export default function NavBar() {
         <nav className="links">
           <a href="#hero">Home</a>
           <a href="#overview">Overview</a>
+          <a href="#news">News</a>
           <div className="dropdown">
             <button className="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Video ▾</button>
             <div className="dropdown-menu" role="menu">

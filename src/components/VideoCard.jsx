@@ -48,7 +48,8 @@ export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embe
         ></iframe>
       </div>
       <div className={`video-description video-description--${tone}`}>
-        <h3>{title}</h3>
+        <h3 className="text-xl">{title}</h3>
+        <br></br>
         <p>{description}</p>
       </div>
     </div>

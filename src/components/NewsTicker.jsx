@@ -267,20 +267,20 @@ export default function NewsTicker({
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5
-                     hover:bg-slate-800/60 focus:bg-slate-800/80 focus:outline-none
-                     focus-visible:ring-2 focus-visible:ring-slate-500
+                     hover:bg-stone-800/60 focus:bg-stone-800/80 focus:outline-none
+                     focus-visible:ring-2 focus-visible:ring-stone-500
                      text-sm sm:text-base"
             aria-label={`Open: ${n.title} (${host})`}
             onMouseDown={(e) => e.currentTarget.blur()}
             onTouchStart={(e) => e.currentTarget.blur()}
             onClick={(e) => e.currentTarget.blur()}
           >
-            <span className="text-slate-400 text-xs sm:inline hidden whitespace-nowrap">
+            <span className="text-stone-400 text-xs sm:inline hidden whitespace-nowrap">
               [{date}]&nbsp;
             </span>
 
             {/* title */}
-            <span className="font-medium whitespace-nowrap max-w-[60ch] truncate">
+            <span className="text-stone-200 font-medium whitespace-nowrap max-w-[60ch] truncate">
               {n.title}
             </span>
           </a>
@@ -293,7 +293,7 @@ export default function NewsTicker({
             aria-hidden
             className="opacity-40 mx-6 sm:mx-8 lg:mx-12 text-lg select-none"
           >
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </span>
         );
 
@@ -317,7 +317,7 @@ export default function NewsTicker({
 
   return (
     <div
-      className={`w-full bg-slate-900 text-slate-100 overflow-hidden border border-slate-800 rounded-xl ${className}`}
+      className={`w-full bg-stone-700 text-stone-100 overflow-hidden border border-stone-600 rounded-xl ${className}`}
     >
       <div
         ref={trackWrapRef}
@@ -329,8 +329,8 @@ export default function NewsTicker({
         role="marquee"
       >
         {/* left/right fades */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-slate-900 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-slate-900 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-stone-900 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-stone-900 to-transparent" />
 
         <div className={prefersReduced ? "" : "animate-ticker ticker-inner"}>
           <span className="ticker-copy">{tickerNodes}</span>

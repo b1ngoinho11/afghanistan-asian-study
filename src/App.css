@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .page {
   color: inherit;
 }
@@ -203,6 +205,7 @@
 }
 .section h2 {
   margin: 0 0 1rem;
+  font-size: x-large;
 }
 .section p {
   margin: 0;

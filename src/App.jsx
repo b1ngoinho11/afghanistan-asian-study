@@ -92,11 +92,11 @@ function App() {
             </div>
           </div>
         </Section>
-        <Section id="news" title="Latest Afghanistan News">
+        <Section id="news" title="Latest News">
           <div style={{ padding: "0.5rem 1rem" }}>
             <NewsTicker
               // props are optional; adjust to taste
-              label="Latest Afghanistan News"
+              label="Latest News"
               speedPxPerSec={60}
               gapPx={64}
               fetchIntervalMs={0} // keep 0 while using mock data
