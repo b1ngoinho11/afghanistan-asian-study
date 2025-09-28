@@ -4,6 +4,7 @@ import Hero from "./components/Hero.jsx";
 import Section from "./components/Section.jsx";
 import VideoCard from "./components/VideoCard.jsx";
 import Footer from "./components/Footer.jsx";
+import NewsTicker from "./components/NewsTicker.jsx";
 
 function App() {
   return (
@@ -46,7 +47,10 @@ function App() {
                   </tr>
                   <tr>
                     <th>Neighbors</th>
-                    <td>Pakistan, Iran, Turkmenistan, Uzbekistan, Tajikistan, China</td>
+                    <td>
+                      Pakistan, Iran, Turkmenistan, Uzbekistan, Tajikistan,
+                      China
+                    </td>
                   </tr>
                   <tr>
                     <th>Currency</th>
@@ -86,6 +90,18 @@ function App() {
                 heritage and traditions.
               </p>
             </div>
+          </div>
+        </Section>
+        <Section id="news" title="Latest Afghanistan News">
+          <div style={{ padding: "0.5rem 1rem" }}>
+            <NewsTicker
+              // props are optional; adjust to taste
+              label="Latest Afghanistan News"
+              speedPxPerSec={60}
+              gapPx={64}
+              fetchIntervalMs={0} // keep 0 while using mock data
+              maxItems={12}
+            />
           </div>
         </Section>
 
