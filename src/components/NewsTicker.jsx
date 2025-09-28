@@ -228,32 +228,46 @@ export default function NewsTicker({
   className = "",
   label = "Latest Afghanistan News",
 }) {
-  const [items, setItems] = useState(() =>
-    (mockResponse.news ?? []).slice(0, maxItems)
-  );
+  const [items, setItems] = useState([]);
   const prefersReduced = usePrefersReducedMotion();
   const trackWrapRef = useRef(null);
 
-  // --- Real fetch (commented out initially) ---
-  // useEffect(() => {
-  //   let cancelled = false;
-  //   const load = async () => {
-  //     try {
-  //       const res = await fetch(apiUrl);
-  //       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  //       const data = await res.json();
-  //       if (!cancelled) setItems((data?.news ?? []).slice(0, maxItems));
-  //     } catch (e) {
-  //       console.error("NewsTicker fetch error:", e);
-  //     }
-  //   };
-  //   load();
-  //   if (fetchIntervalMs > 0) {
-  //     const id = setInterval(load, fetchIntervalMs);
-  //     return () => { cancelled = true; clearInterval(id); };
-  //   }
-  //   return () => { cancelled = true; };
-  // }, [apiUrl, fetchIntervalMs, maxItems]);
+  useEffect(() => {
+    let active = true;
+    const ctrl = new AbortController();
+
+    const load = async () => {
+      try {
+        const res = await fetch(apiUrl, { signal: ctrl.signal });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        // WorldNewsAPI returns { news: [...] }. Some APIs use { articles: [...] }.
+        const list = (data?.news ?? data?.articles ?? []).slice(0, maxItems);
+
+        if (active) setItems(list);
+      } catch (e) {
+        console.error("NewsTicker fetch error:", e);
+        // graceful fallback so the UI still shows something:
+        if (active && items.length === 0) {
+          setItems((mockResponse.news ?? []).slice(0, maxItems));
+        }
+      }
+    };
+
+    load();
+
+    let id;
+    if (fetchIntervalMs > 0) {
+      id = setInterval(load, fetchIntervalMs);
+    }
+
+    return () => {
+      active = false;
+      if (id) clearInterval(id);
+      ctrl.abort();
+    };
+  }, [apiUrl, fetchIntervalMs, maxItems]);
 
   const tickerNodes = useMemo(
     () =>
@@ -293,7 +307,6 @@ export default function NewsTicker({
             aria-hidden
             className="opacity-40 mx-6 sm:mx-8 lg:mx-12 text-lg select-none"
           >
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </span>
         );
 
