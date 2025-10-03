@@ -7,6 +7,7 @@ import Footer from "./components/Footer.jsx";
 import NewsTicker from "./components/NewsTicker.jsx";
 
 function App() {
+  const asset = (name) => new URL(`./assets/${name}`, import.meta.url).href;
   return (
     <div className="page">
       <NavBar />
@@ -111,14 +112,14 @@ function App() {
             videoSrc="https://youtu.be/GKXfVJX02Uk"
             title="Asian Country"
             description="A quick look at Afghanistan as part of Asia, highlighting its location, neighbors, and regional importance."
-            images={["src/assets/country1.jpg", "src/assets/country2.jpg", "src/assets/country3.jpg"]}
+            images={[asset("country1.jpg"), asset("country2.jpg"), asset("country3.jpg")]}
           />
           <VideoCard
             id="video-health-wellness"
             videoSrc="https://youtu.be/4y99h85eq7U"
             title="Health and Wellness"
             description="Covers traditional health practices, modern healthcare challenges, and how people maintain well-being in daily life."
-            images={["src/assets/wellness.jpg"]}
+            images={[asset("wellness.jpg")]}
             reverse
           />
           <VideoCard
@@ -126,14 +127,14 @@ function App() {
             videoSrc="https://youtu.be/J5v09woqLQs"
             title="Political Leadership"
             description="Explains Afghanistan’s leadership system, key figures, and the role politics play in shaping the nation."
-            images={["src/assets/political1.jpeg", "src/assets/political2.jpeg", "src/assets/political3.jpg", "src/assets/political4.jpg"]}
+            images={[asset("political1.jpeg"), asset("political2.jpeg"), asset("political3.jpg"), asset("political4.jpg")]}
           />
           <VideoCard
             id="video-personality"
             videoSrc="https://youtu.be/uNtdkMnyUBY"
             title="Personality"
             description="Showcases the warm, hospitable, and resilient character of Afghan people across generations."
-            images={["src/assets/personality1.jpg", "src/assets/personality2.jpg", "src/assets/personality3.jpg", "src/assets/personality4.jpg"]}
+            images={[asset("personality1.jpg"), asset("personality2.jpg"), asset("personality3.jpg"), asset("personality4.jpg")]}
             reverse
           />
           <VideoCard
@@ -141,14 +142,14 @@ function App() {
             videoSrc="https://youtu.be/ap8Ugo9iRdE"
             title="Cultural Festivals"
             description="Explores colorful celebrations like Nowruz and Eid, reflecting traditions, music, and community spirit."
-            images={["src/assets/festival.jpeg"]}
+            images={[asset("festival.jpeg")]}
           />
           <VideoCard
             id="video-local-entertainment"
             videoSrc="https://youtu.be/8amZ6cFGfq4"
             title="Local Entertainment"
             description="Highlights Afghan music, poetry, storytelling, and the role of tea houses as social hubs."
-            images={["src/assets/entertainment.jpg"]}
+            images={[asset("entertainment.jpg")]}
             reverse
           />
           <VideoCard
@@ -156,14 +157,14 @@ function App() {
             videoSrc="https://youtu.be/apnU4tEqLiM"
             title="Languages and Dialects"
             description="Introduces Dari and Pashto as main languages, along with regional dialects that show the country’s diversity."
-            images={["src/assets/language1.jpg", "src/assets/language2.jpg"]}
+            images={[asset("language1.jpg"), asset("language2.jpg")]}
           />
           <VideoCard
             id="video-traditional-sports"
             videoSrc="https://youtu.be/dB_pUhCha-4"
             title="Traditional Sports"
             description="Focuses on Buzkashi and other native games that represent strength, teamwork, and culture."
-            images={["src/assets/sport.jpg"]}
+            images={[asset("sport.jpg")]}
             reverse
           />
           <VideoCard
@@ -171,14 +172,14 @@ function App() {
             videoSrc="https://youtu.be/jpwL3fD-lmU"
             title="Asian Beauty"
             description="Presents Afghanistan’s unique sense of beauty seen in clothing, jewelry, and natural landscapes."
-            images={["src/assets/beauty.jpeg"]}
+            images={[asset("beauty.jpeg")]}
           />
           <VideoCard
             id="video-population"
             videoSrc="https://youtu.be/mO1Gp2sqRUY"
             title="Population"
             description="Provides insight into demographics, ethnic groups, and the youthful population shaping the country’s future."
-            images={["src/assets/population1.jpg", "src/assets/population2.jpg"]}
+            images={[asset("population1.jpg"), asset("population2.jpg")]}
             reverse
           />
           <VideoCard
@@ -186,14 +187,14 @@ function App() {
             videoSrc="https://youtu.be/a4P5S7oxgiQ"
             title="Communication"
             description="Looks at how Afghans connect—through face-to-face traditions, media, and expanding digital networks."
-            images={["src/assets/communication.jpg"]}
+            images={[asset("communication.jpg")]}
           />
           <VideoCard
             id="video-environment"
             videoSrc="https://youtu.be/nSejE2UAx20"
             title="Environment"
             description="Discusses Afghanistan’s mountains, rivers, and environmental challenges such as deforestation and climate change."
-            images={["src/assets/environment.jpg"]}
+            images={[asset("environment.jpg")]}
             reverse
           />
         </Section>
