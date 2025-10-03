@@ -1,4 +1,4 @@
-export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embed/dQw4w9WgXcQ", title = "Video Title Placeholder", description = "Replace this description with details about the video and how it relates to Afghanistan.", reverse = false, tone = "neutral" }) {
+export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embed/dQw4w9WgXcQ", title = "Video Title Placeholder", description = "Replace this description with details about the video and how it relates to Afghanistan.", reverse = false, tone = "neutral", images = [] }) {
   const toEmbedUrl = (url) => {
     try {
       const u = new URL(url);
@@ -51,6 +51,18 @@ export default function VideoCard({ id, videoSrc = "https://www.youtube.com/embe
         <h3 className="text-xl">{title}</h3>
         <br></br>
         <p>{description}</p>
+        {Array.isArray(images) && images.length > 0 ? (
+          <div className={`video-images ${
+            images.length === 1 ? 'video-images--grid-1' :
+            images.length === 2 ? 'video-images--grid-2' :
+            images.length === 3 ? 'video-images--grid-3' :
+            'video-images--grid-4'
+          }`}>
+            {images.slice(0, 4).map((src, idx) => (
+              <img key={idx} src={src} alt="" loading="lazy" />
+            ))}
+          </div>
+        ) : null}
       </div>
     </div>
   )
